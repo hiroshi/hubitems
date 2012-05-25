@@ -1,4 +1,6 @@
 Hubitems::Application.routes.draw do
+  get '/' => "application#index"
+  resources :items, :only => [:create, :index]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
